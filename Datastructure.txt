@@ -1,0 +1,45 @@
+Real Time Personalized Physiologically Based Stress Detection for Hazardous Operations
+
+Stress detection, machine learning, physiological sensors, virtual reality, spaceflight training.
+
+
+IEEE Transaction on Machine Learning,Volume:11,Issue Date:16.March.2023
+
+
+Real_Time_Personalized_Physiologically
+
+
+real_time_personalized_physiologically
+
+
+
+predict_stress_detection
+
+
+Patient_ID	
+Age	
+Sex	
+Cholesterol	
+Blood_Pressure	
+Heart_Rate	
+Diabetes	
+Family_History	
+Smoking	
+Obesity	
+Alcohol_Consumption	
+Exercise_Hours_Per_Week	
+Diet	
+Previous_Heart_Problems	
+Medication_Use	
+Stress_Level	
+Sedentary_Hours_Per_Day	
+Income	
+BMI	
+Triglycerides	
+Physical_Activity_Days_Per_Week	
+Sleep_Hours_Per_Day	
+Country	
+Continent	
+Hemisphere
+Heart_Attack
+Prediction

@@ -1,0 +1,189 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+.style6 {
+	font-size: 24px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">PREDICTION OF STRESS STRESS FOR HAZARDOUS OPERATIONS DETECTION STATUS!!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1024" align="center">
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter Patient_ID</div>
+                                    </div></td>
+                                    <td><input type="text" name="Patient_ID"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Age </div></td>
+                                    <td><input type="text" name="Age"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter Sex </div>
+                                    </div></td>
+                                    <td><select name="Sex">
+                                      <option>--- Select ---</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                    </select>
+                                    </td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Cholesterol</div></td>
+                                    <td><input type="text" name="Cholesterol"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Blood_Pressure</div></td>
+                                    <td><input type="text" name="Blood_Pressure"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Heart_Rate</div></td>
+                                    <td><input type="text" name="Heart_Rate"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter </span>Diabetes</div></td>
+                                    <td><input type="text" name="Diabetes"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Family_History</div></td>
+                                    <td><input type="text" name="Family_History"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Smoking	</div></td>
+                                    <td><input type="text" name="Smoking"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Obesity</div></td>
+                                    <td><input type="text" name="Obesity"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Alcohol_Consumption</div></td>
+                                    <td><input type="text" name="Alcohol_Consumption"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Exercise_Hours_Per_Week</div></td>
+                                    <td><input type="text" name="Exercise_Hours_Per_Week"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Diet</div></td>
+                                    <td><input type="text" name="Diet"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Previous_Heart_Problems	</div></td>
+                                    <td><input type="text" name="Previous_Heart_Problems"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Medication_Use</div></td>
+                                    <td><input type="text" name="Medication_Use"></td>
+                                    <td bordercolor="#FFFFFF" bgcolor="#FF0000"><div align="center" class="style4">Enter Stress_Level</div></td>
+                                    <td><input type="text" name="Stress_Level"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Sedentary_Hours_Per_Day	</div></td>
+                                    <td bgcolor="#FFFFFF"><input type="text" name="Sedentary_Hours_Per_Day"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Income </div></td>
+                                    <td><input type="text" name="Income"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter BMI</div></td>
+                                    <td><input type="text" name="BMI"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Triglycerides</div></td>
+                                    <td><input type="text" name="Triglycerides"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Physical_Activity_Days_Per_Week </div></td>
+                                    <td><input type="text" name="Physical_Activity_Days_Per_Week"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Sleep_Hours_Per_Day</div></td>
+                                    <td><input type="text" name="Sleep_Hours_Per_Day"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Country </div></td>
+                                    <td><input type="text" name="Country"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Continent</div></td>
+                                    <td><input type="text" name="Continent"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Hemisphere</div></td>
+                                    <td><input type="text" name="Hemisphere"></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter Heart_Attack</div></td>
+                                    <td><input type="text" name="Heart_Attack"></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="289" height="44" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td width="222"><input name="submit" type="submit" class="style1" value="Predict"></td>
+                                    <td width="318">&nbsp;</td>
+                                    <td width="175">&nbsp;</td>
+                                  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                              <table width="818" height="49" border="0" align="center" >
+                                    <tr><td width="532" bgcolor="#FF0000"><div align="center"><span class="style6">PREDICTED STRESS FOR HAZARDOUS OPERATIONS DETECTION STATUS </span> <span class="style4">:: ---&gt;</span></div></td>
+
+
+
+                                      <td width="276" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center"><strong>{{objs}}</strong></div></td>
+                                    </tr>
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

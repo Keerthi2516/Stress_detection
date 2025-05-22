@@ -1,0 +1,102 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home Page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet"  type="text/css" href="{% static 'style.css'%} "  />
+<link rel="stylesheet"   type="text/css" href="{% static 'coin-slider.css'%}" />
+
+<script type="text/javascript" src="{% static 'cufon-yui.js'%} "></script>
+<script type="text/javascript" src="{% static 'cufon-aller.js'%}"></script>
+<script type="text/javascript" src="{% static 'jquery-1.4.2.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'script.js'%}"></script>
+<script type="text/javascript" src="{% static 'coin-slider.min.js'%}"></script>
+<style type="text/css">
+<!--
+.style5 {
+	font-size: 24px;
+	color: #FF0000;
+}
+.style12 {font-weight: bold}
+.style13 {font-size: 24px; color: #FF0000; font-weight: bold; }
+.style16 {color: #FF0000}
+-->
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <p>&nbsp;</p>
+      </div>
+      <div class="mainbar">
+        <h1 align="center"><a href="index.html"><span class="content style5">Real Time Personalized Physiologically Based Stress Detection for Hazardous Operations</span></a></h1>
+
+
+
+        <div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-alerts">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script><link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" /><div class="container py-5">
+  <div class="row">
+    <div class="alert alert-primary text-white font-weight-bold" role="alert">
+     <p align="center"><span class="active"><span class="style12"><a href="{% url 'index' %}">Home|  </a><a href="{% url 'login' %}">Remote User </a>|<a href="{% url 'serviceproviderlogin' %}"> Service Provider </a></span></span></p>
+    </div>
+    <div>
+</div>
+
+
+
+        <img src="{% static 'Banner.jpg'%}" width="1297" height="421" alt="" class="fl" />      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2 align="center" class="style13">Stress detection, machine learning, physiological sensors, virtual reality, spaceflight training..</h2>
+          <div class="img">
+            <div align="center"><img src="{% static 'img1.jpg'%}" width="630" height="221" alt="" class="fl" /></div>
+          </div>
+          <div class="post_content">
+            <p align="center" class="style16">When training for hazardous operations, real-time stress detection is an asset for optimizing task performance and reducing stress. Stress detection systems train a machine-learning model with physiological signals to classify stress levels of unseen data. Unfortunately, individual differences and the time-series nature of physiological signals limit the effectiveness of generalized models and hinder both post-hoc stress detection and real-time monitoring. This study evaluated a personalized stress detection system that selects a personalized subset of features for model training. The system was evaluated post-hoc for real-time deployment. Further, traditional classifiers were assessed for error caused by indirect approximations against a benchmark, optimal probability classifier (Approximate Bayes; ABayes). Healthy participants completed a task with three levels of stressors (low, medium, high), either a complex task in virtual reality (responding to spaceflight emergency fires, n =27) or a simple laboratory-based task (N-back, n =14). Heart rate, blood pressure, electrodermal activity, and respiration were assessed. Personalized features and window sizes were compared. Classification performance was compared for ABayes, support vector machine, decision tree, and random forest. The results demonstrate that a personalized model with time series intervals can classify three stress levels with higher accuracy than a generalized model. However, cross-validation and holdout performance varied for traditional classifiers vs. ABayes, suggesting error from indirect approximations. The selected features changed with window size and tasks, but found blood pressure was most prominent. The capability to account for individual difference is an advantage of personalized models and will likely have a growing presence in future detection systems..</p>
+          </div>
+
+        <div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-alerts">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script><link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" /><div class="container py-5">
+  <div class="row">
+    <div class="alert alert-primary text-white font-weight-bold" role="alert">
+     <p align="center"><span class="active"><span class="style12"><a href="{% url 'login' %}">Home|  </a><a href="{% url 'login' %}">Remote User </a>|<a href="{% url 'serviceproviderlogin' %}"> Service Provider </a></span></span></p>
+    </div>
+    <div>
+</div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="searchform"></div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg"></div>
+  <div class="footer"></div>
+</div>
+<div align=center></div>
+</body>
+</html>
